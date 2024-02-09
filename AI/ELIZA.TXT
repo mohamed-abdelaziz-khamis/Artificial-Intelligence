@@ -1,0 +1,640 @@
+ECC-Eliza VERSION 3.65 http://www.ecceliza.cjb.net 
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴 
+
+     * GET THE NEWEST ECC-ELIZA VERSION: http://www.ecceliza.cjb.net *
+
+Next ECC-Eliza version will be available in March, 2000.
+Check out the above site to download it then. 
+
+THIS PRORAM IS FOR AMUSEMENT PURPOSES ONLY! THIS IS NOT A REAL PSYCHOLOGIST,
+AND SHOULD NOT BE TREATED AS ONE. FOR MORE INFORMATION VIEW "IMPORTANT REMARK"
+TOPIC AT THE BOTTOM OF THIS TEXT.
+
+Installation
+컴컴컴컴컴컴
+* It is really easy to install Eliza, this part is intended for newbies only.
+
+Installing ECC-Eliza is very easy.
+First, unzip ECCELIZA.ZIP (which you probably already did to read this).
+Then, copy all the files which you unzipped to any directory, preferably
+C:\ECCELIZA (in order to use PIF file). The only files that you actually need
+to run ECC-Eliza are ECCELIZA.EXE and ELIZA.DAT, the other two are the help
+file (this one), and a PIF file for running under Windows 95/98/2000.
+After this, all you got to do is to make a shortcut for ECCELIZA.PIF on
+your desktop or start menu. To make a shortcut on your desktop, right-click
+anywhere on your background (not on any icon), choose "New" from the pop-up
+menu and then click on Shortcut. Then, in the query prompt, type the
+directory where ECCELIZA.PIF is, followed by ECCELIZA.PIF. For example:
+C:\ECCELIZA\ECCELIZA.PIF. Click NEXT and follow the rest of the instructions
+(if any). You can later change the icon. In case you install Eliza to another
+directory, after selecting ECCELIZA.PIF Windows will tell you the directory
+of ECCELIZA.EXE is invalid - in that case input the right location.
+You are all set now. Just double click ECC-Eliza on the desktop.
+
+Introduction
+컴컴컴컴컴컴
+Welcome to ECC-Eliza (Eden Comp-Company Eliza), one of the only AI
+(Artificial Intelligence) programs which actually understand you and act
+the most human-like. Today, in 1999, The Eden-Comp company is proud to
+present to you an advanced AI program which is based on Eliza Turbo Pascal
+from the early 90's. Eliza is an AI program which acts like a psychologist.
+Many AI programs are named "Eliza" and they all have some things in common.
+This version of Eliza is the orginial Turbo Pascal version with great
+improvements to it's vocabulary and understanding of the patient's text.
+Eliza works under virtual DOS (mode), and won't be a problem if working on
+any version of Windows. It can run in real mode too (no Windows running),
+and would actually run better, but the difference is small so it's up to you.
+The included ECCELIZA.PIF file will allow you to run the program free of
+problems when using Windows 9x/2000.
+You may run that file under Windows to activate the program.
+
+System Requirements
+컴컴컴컴컴컴컴컴컴�
+Although Eliza is written in DOS, and has a simple GUI of casual text,
+Eliza complies of sophisticated algorithms that require fast CPUs.
+The main part where Eliza requires a fine processor is the loading part.
+ECC-Eliza is designed work on every AT PC (286+) - but requires a
+Pentium/60 or 486/DX4 for acceptable performance. Running Eliza on a 386 or
+worse would be extremly slow and useless. ECC-Eliza runs much faster on
+a Pentium II/450MHz than on a Pentium/166MHz. So you must use a Pentium
+for it. As for other devices, Eliza doesn't require anything else.
+RAM is essencial, but Eliza will quickly swap it's RAM data if it happens to
+be full (this would not slow the program too badly).
+These are all the requirements, unless you want to discuss 250KB of free HD,
+EGA monitor, etc.
+Note: You may notice that ECC-Eliza runs at different speeds under Windows.
+This is caused by virtual mode. Sometimes Eliza will load very fast, this
+is usually not good because Eliza didn't store many of it's settings in
+the computer's memory. The results might be a little worse. In that case,
+you may decide to restart Eliza.
+
+Why speak to Eliza?
+컴컴컴컴컴컴컴컴컴�
+Why, you ask yourself? It really isn't going to solve your problems, even
+though it has a lot of intelligent sentences in many occasions, but the
+main reason to speak with Eliza is to get excited about what a 250KB
+program is capable of doing. Eliza handles your sentences really good.
+I've met people who didn't at all get excited about AI programs, but thinking
+of the fact that your purpose is to make a human out of a machine and
+achieving what this program has achieved is really nice.
+Eliza is intended for fun, even though she is far from being the most
+interesting person (nor computer) to speak to. If you speak recently to Eliza
+you will be amazed about the fact that the amount of sentences which Eliza
+knows is simply incredible (you may speak to her for 13 hours with a unique
+sentence each time, yet there will be many unique sentences to come).
+                                                                                                         
+How to speak to Eliza
+컴컴컴컴컴컴컴컴컴컴�
+This short guide will explain to you how to communicate best with Eliza,
+what to write to get the most of the program and the best possible replies.
+Remember, although Eliza is supposed to be a psychologist, don't expect
+the program to solve your problems, use this program more as a person to
+speak to, but still remember that Eliza will oftenly ask you things about
+your problems, and will not let you talk about her easily (since when does
+the patient speak about it's doctor with it's doctor?). Eliza will try to
+keep the conversation calm and will not be satisfyed if you speak about
+things she doesn't like. Eliza might be "human-like" but she is a computer
+and oftenly speaks about herself as a computer, so remember that she is much
+more of a computer than a human (in the way of refering to herself).
+
+How not to speak to Eliza
+컴컴컴컴컴컴컴컴컴컴컴컴�
+The following paragraph reveals some interesting things about Eliza that
+could ruin the fun out of it. Please skip it if you don't want to lose the
+fun. If you skip it read the next paragraph after it ("Eliza would...").
+
+Eliza is not a human, only a computerized program. Therefore, it only
+understands what it has been taught, and that's really nothing compared to
+a human, but even though Eliza doesn't understand a lot of what you say
+(usually 30-40 percent of what you say), it will answer 98% of the time
+appropriate answers and make you feel as if she understands everything you
+say, thanks to the smart programming of this program. In addition, you should
+note to yourself that Eliza understands each of your answers/quotes as a
+seperate one and does not at all remember what you've written before.
+There are a few exeptions to this. Eliza does know what attitude you had
+towards her, and also knows what type of answers to expect from you.
+
+Eliza would understand the user best if it doesn't do some things as:
+- Type your words completely and without mistakes. Eliza will not interpret
+  "becuase" as "because" and certainly not anything like "coz".
+  Remember, speaking with Eliza is certainly NOT like an Internet chat,
+  therefore be careful about your spelling and expressions.
+- When using shortcuts such as don't, it's, etc. don't forget to use the
+  ' sign. If you use the reverse one (`) it's also okay.
+- Make sure everything you say is between 5-11 words.
+  Too short quotes are not very good for Eliza, and too long ones would
+  confuse the program sometimes, making answers not very relative.
+- If you are not sure in the spelling of something don't write it.
+  Eliza will not understand the word, and sometimes say unreasonable things.
+- Have your quotes pretty much "summarized", and don't use many times words
+  like: "like", "as", "what" in one sentence.
+- Make sure your vocabulary is not too complex (too simple is okay).
+- Eliza won't like it if you say bad words, repeat yourself too much,
+  leave the prompt empty, etc. and may end the conversation due to that.
+
+Even though Eliza has many limitations don't take them too seriously and
+you could certainly speak natuarally and normally, but for best results use
+these limitations.
+
+Sentence Keywords
+컴컴컴컴컴컴컴컴�
+Unless you look at the DAT file (not recommanded, but if you want to improve
+the program), you will want to know a few of the keywords which Eliza puts
+special attension into. It might ruin the fun, because it's more interesting
+finding it out yourself. Eliza recognizes over 1670 keywords, some are of
+the same catagory (e.g. HOW ARE YOU, HOW DO YOU DO, HOW'RE YOU, etc).
+These are a very few of the keywords Eliza recognizes, but don't forget that
+most of them are such as: ISN'T, WHO, WHY, I WAS, AM I, BECAUSE, YOURS, VERY,
+YES, NOT REALLY, SORT OF, WHO CARES, I DON'T, MAYBE, A LOT, ALIKE, I NEED, etc.
+
+
+SISTER           MUSIC           MOVIE           SAME           ELIZA
+MONEY            ILLNESS         HEADACHE        SORRY          THANK YOU
+BEATIFUL         NICE            UNHAPPY         SAD            ANGRY
+KILL             SUICIDE         EXAM            SCHOOL         FRIEND
+FEAR             DREAM           NIGHTMARE       CURIOSITY      AFRAID
+SMART            CLEVER          STUPID          DUMB           FAMILY
+FATHER           LOVE            BOYFRIEND       MARRIGE        SPORTS
+WANTINGS         ANGRY           GOOD            BAD            ASTROLOGY
+
+Those are about 2% of Eliza's recognizable keywords, try hundreds more.
+Actually, the best way is not to test the program's strength and keywords,
+the best way is to speak natuarally and get to understand and know Eliza's
+capabilities in that way.
+
+The Engine
+컴컴컴컴컴
+Exactly how the engine works is not important, and if you want to know more
+you could check the data file (supplied with our notes), but if you want
+to know some details about the capabilities - here they are:
+
+- Understands: about 1500 words and 550 expressions (more than enough).
+- Could say:   about 2820 permenant quotes (quotes that have no difference
+  when they are said, like: "YES, I UNDERSTAND" will always be the same)
+  and about 350 variable quotes (quotes that change upon your possible quote,
+  for example: "BUT WHY DO YOU THINK I AM GREAT?" and
+  "BUT WHY DO YOU THINK HE IS NOT VERY CLEVER?", only a part of those
+  quotes is permanent, the rest depends on the conversation).
+- Eliza also has about 300 quotes which do not appear in the data file,
+  as they are part of the program itself. Such include greeting messages
+  and many more.
+- Eliza may say the user's name in over 350 different messages.
+- The program has a few potencial answers for each quote (chose randomly),
+  so answers won't be the same for all user quotes.
+
+Known Bugs 
+컴컴컴컴컴
+Eliza is mostly programmed and tested on an antique Pentium MMX-150MHz, 32MB.
+Eliza is occasionally tested on an IBM Pentium 450MHz, 64MB RAM.
+
+There are a two known bugs and you should try to ignore them:
+
+- The program sometimes answers with "ME" instead of "I" (very rare).
+- Sometimes program misinterprets your keywords (e.g. You write:
+  "WHAT IS THE TIME?" and the program answers "IS THERE ENOUGH TIME
+  LEFT?" (this was fixed, but it's an example. rare).
+
+Other AI Programs
+컴컴컴컴컴컴컴컴�
+There are a few executable downloadable (non-internet) AI bot programs.
+ECC-Eliza is the best psychologist program. Here are a few downloadable
+and non-downloadable bots:
+
+ALICE - A chatterbot, perhaps the best one in the world. This not a
+        psychologist but it understands many things. Works as good as
+        Eliza, written in AIML/Java. http://www.alicebot.org
+        Includes open source code which is fully downloadable. 
+
+ASK-ME - Or Dr. Maris. A very interesting AI program which had a totally
+         different engine. It was written in QBASIC but then disappeared
+         due to some virus. Version 2.20 was last released. If you happen
+         to have it - please E-Mail it to me.
+
+BRAIN - Another excellent chatterbot. Found on the net. http://orlo.emi.net
+
+CLAUDE - An old chatterbot program. Has sentence models which are
+         integrated with random nouns and verbs. Interesting.
+
+DR. SBAITSO - A psychologist program packaged with the Sound Blaster 8 and
+              is an okay AI Program which also talks with a mechanical voice.
+
+ELIZA - Many versions of this early program, each one different.
+
+NIALL - A 100% fully self learning bot. Not a very successful attempt in my
+        opinion. Downloadable.
+
+SHAMPAGE - Considered to be a very definable and smart Eliza-style bot,
+           this one emulates a BBS sysop and works under BBSes. Downloadable.
+
+A few bot-realated places on the web to visit are:
+
+        www.botspot.com                        - Internet.com's bot site.
+        www.student.toplinks.com/hp/sjlaven    - Includes bot downloads.
+
+News and changes.
+컴컴컴컴컴컴컴컴�
+Between version 2.27 and version 2.58:
+
+- Eliza types in "typewriter" style.
+- The "typewriter" style sometimes makes mistakes and deletes them!
+- Eliza gets rid of most punctuation marks in your text (except for ').
+- Eliza recognizes holidays and day time to greet you when you come and go!
+- 36 New build in messages made, was 20 for each category in last version.
+- Eliza has special exit messages in case you leave after less than 6 quotes!
+- Eliza has a lots of new special keywords.
+- Very improved keywords recognization.
+- Fixed all response typos (were a few).
+- Many minor additions and changes.
+
+- New to version 2.58: Eliza may use "I'M" or "I AM", etc. for speaking.
+                       This is chose randomly and also includes:
+                       you are, am not, are not, etc.
+
+- New to version 2.63: Added some Easter-Egg.
+                       Added random quotes to repeatition, greetings and exits.
+                       Fixed a bug which prevented some random quotes.
+                       Added day-of-week for greeting and exit quotes.
+                       A few minor additions.
+
+- New to version 2.67: If Eliza's reply is too long ( > 79 chars), then it is
+                       being sperated on a new line. Nicely done. This will
+                       not work for next possible lines (3rd, 4th, etc).
+                       Fixed a few allignment minor bugs.
+                       Added some very minor features.
+
+- New to version 2.69: Fixed bug from 2.67 - allignment problem.
+  (WAS VERY BUGGY!)    Added new opening and ending statements.
+
+- New to version 2.75: FIXED LOTS OF BUGS FROM VERSION 2.69.
+                       This version was extremly buggy. The bugs were that
+                       the program would not reply to the user many times.
+                       It was hard to correct it without taking back the
+                       updates I made to that version. Using the new
+                       method it is impossible that the program will not
+                       answer you. Anyways, this version is all fixed up.
+                       If you have version 2.69 - switch it immediately
+                       (even to a previous version) so you can enjoy
+                       ECC-Eliza!
+
+- New to version 2.82: Multiple replies on repeating and blank answers
+                       bug from previous version - FIXED.
+                       Program verifies if user wants to exit with 14
+                       different random queries.
+                       Exit can be done not only with "BYE" or "GOODBY".
+                       Many other minor changes and additions.
+                                                             
+- New to version 2.84: Fixed some more allignment inconviniences.
+                       Fixed up the code a little bit.
+
+- New to version 2.88: The punctuation marks filtering works perfect!
+                       No more extra spaces instead of filtered puncuation.
+                       Question and exclamation marks appear right after
+                       the text! No more seperating space(s).
+                       Improved code.
+                       Improved data file. More keywords and replies!
+
+- New to version 2.89: Added total of 14 random queries for greetings,
+                       exit queries and leavings.
+                       Improved a bit of code.
+                       Some minor changes.
+                       Data file is getting very close to 100KB, probably
+                       in next version!
+                                           
+- New to version 2.96: Eliza notifys you 33% of the times when your sentences
+                       are not complete ( < 10 characters). There are over 30
+                       different random quotes for that.
+                       Lots of new random quotes for other scenarios.
+                       Bar line to seperate between title and conversation.
+                       Lots of new keywords and replies in data file.
+                       Data file is over 100KB.
+                       Lots of minor changes and additions.
+
+- New to version 3.00: This version certainly deserved the number 3!
+                       Lots of additions and changes to code.
+                       Integration of user name. Program calls the user by
+                       the name he/she enters. In the data file each time
+                       character "|" is found it is automatically converted
+                       to the user's name. User's name must only contain
+                       alphabet letters!
+                       "Analyzing..." message added when PC is processing.
+                       The bar line is being animated at start.
+                       Data file changed to contain the user's name.
+                       Fixed many minor bugs.
+
+- New to version 3.05: Lots of new build-in program messages (about 20).
+                       User's name integrated in all types of build-in
+                       messages: greeting, repeating, blank answers,
+                       exit queries, goodbye messages, long-talk messages,
+                       goodbye after a short conversation, and more!
+                       Progress bar when program is loading.
+                       The time of the day in the greeting may now be only
+                       the weekday's name (14% chance unless special day).
+                       A few additions and changes.
+                       Bigger data file.
+                       Some very small bug fixes.
+
+- New to version 3.06: Some additions and changes in code.
+                       My name (Eden Cohen) is encrypted, there is no way
+                       to take it out. Bad news for hex hackers...
+
+- New to version 3.16: Lots of visual changes!
+                       From now on, the text in the new window scrolls,
+                       but the window stays unchanged!
+                       After first quote from Eliza (opening message), the
+                       two upper lines become status lines which give the
+                       user information about Eliza, version, author, date
+                       and memory.
+                       Lots of other visual enhancements!
+                       Another bar line (in the bottom of the screen).
+                       Fixed a few bugs.
+                       Many other minor changes and additions.
+
+- New to version 3.17: Fixed two totally different allignment problems.
+                       One was from previous version, the other was old.
+                       Fixed a bug where 2 messages would be displayed at
+                       one time...
+
+- New to version 3.20: The terminating message has been a little animated,
+                       and appears in buttom of the screen.
+                       Fixed a few bugs.
+                       Realligned the status lines.
+                       Total amount of queries was not updated at times,
+                       but now it works perfectly.
+                       Many changes in code.
+
+- New to version 3.21: Both bar lines are drawed simultanously.
+
+- New to version 3.22: After name query is made, it is deleted with animation.
+                       The status lines also include the free disk space,
+                       of the disk being used.
+                       Buttom bar line had a color bug, now it is fixed.
+                       Minor changes and additions.
+
+- New to version 3.30: The user prompt has been changed. Once you get to a
+                       new line you will always "land" on the 4th character.
+                       It is now possible to edit previous lines (of the same input).
+                       Many allignment changes and fixes.
+                       Lots of bug fixes.
+                       Many other changes and additions.
+                       Since I've changed the program a lot with this version,
+                       it is probably buggy.
+
+- New to version 3.31: I did predict bugs and I soon found a pretty critical
+                       one, yet this bug has been active since version 2.82,
+                       and the previous 3.30 had nothing to do with it.
+                       Anyways, the problem was that some strings would've
+                       gotten there edge deleted (I'M BUSY => I'M BUS, etc).
+
+- New to version 3.32: Added visual effect when exiting.
+                       A few minor modifications and updates.
+
+- New to version 3.34: Fixed a few bugs (not serious ones).
+                       The date may be changed after the greeting.
+                       For example: Greeting: GOOD AFTERNOON, I AM...
+                       When exiting: BYE-BYE, HAVE A NICE FRIDAY...
+                       A few other additions and changes.
+
+- Version 3.40 Alpha : I have started making this version after 3.34.
+                       The new addition was that Eliza would be able to solve
+                       mathematical questions when they include an expression
+                       and a few keywords Eliza would recognize ("WHAT IS",
+                       "CALCULATE", etc). I had the full routine to do the
+                       task of converting a string of a mathematical
+                       expression to a real number (result). But, there were
+                       some technical problems. At the end I gave up for it.
+                       For your information, it would have added about 25K to
+                       Eliza, that's a lot in precentage...
+
+                       NOT RELEASED.
+
+- New to version 3.35: Changed code. Splitted program into subprograms.
+                       Added 7 random messages on different occasions.
+                       Fixed a minor allignment problem.
+                       A few other minor changes.
+
+- New to version 3.36: Did you also notice that since version 3.30 typing
+                       lower-case "z" was impossible?
+                       No, it's not a keyboard failure (like I thought),
+                       it simply is a bug which has been now fixed.
+                       The ability to type some "un-necessary" like \,+,=,
+                       etc. as been disabled.
+                       Added some random messages.
+                       Small changes to code.
+                       Bigger data file.
+
+- New to version 3.37: Data file was very enhanced, there were lots of
+                       "stuck" keywords (which could not be reached due to
+                       predecessing keywords (is there such word?)).
+                       Many new keywords added.
+                       Brief introduction and using notes for the data file
+                       in the data file.
+                       In case of improper data in data file, line number is
+                       displayed.
+                       Minor changes and additions.
+
+- New to version 3.38: Some recognition bugs corrected. For example, because
+                       Eliza filters punctuation marks, a reply such as "!!"
+                       would be interpreted as nothing and then Eliza might
+                       ask you why you just press Enter and ignore her.
+                       It has been corrected and all the rest of such
+                       problems. Also, if you repeat such a string as "!!",
+                       it will not act as if you're repeating, it will ask
+                       you to type a proper sentence, etc.
+
+- New to version 3.40: Many minor changes and fixes.
+                       New build-in comments for some occasions.
+                       Loading process shows all the information as it
+                       happens (next version will probably have an improved
+                       loading screen).
+                       Data file improved and optimized.
+                       Eliza now recognizes weekends!
+                       ELIZA NOW WORKS FLAWLESSLY ON PENTIUMS 233MHZ+ CPUs.
+
+- New to version 3.42: Precentage of loading shown during process.
+                       When quitting, it is now possible to restart Eliza
+                       with a new patient (new conversation).
+                       The allignment of Eliza's quotes had some bugs and
+                       is now fixed up.
+                       Many different changes and additions.
+                       Some miscellaneous bug fixes.
+                       Loading the program should take less time now.
+                       More comprehensive and improved data file.
+
+- New to version 3.46: This version was a pain in the ass for me, I had
+                       to overcome many problems with Pascal while working
+                       on the improved quit module which is written in
+                       Pascal. It might look easy for you users, but Eliza
+                       has TONS of "behind the scenes" work which is very
+                       complicated, especially the Turbo Pascal part.
+                       The language recognition part written mostly in C++
+                       was fairly simple to improve, though.
+                       And now to the new features:
+                       - Enhanced start-up screen with ECC-Eliza ANSI.
+                       - Allignment fixes and improvements.
+                       - Many potential language bug fixes.
+                       - A certainly improved prompt when quitting.
+                       - It is now a little easier to quit.
+                       - Lots of small modifications and additions.
+                       - Much enhanced data file.
+
+- New to version 3.47: Disabled ability to restart with a new patient after
+                       you've decided to quit already.
+                       Improved exit query animation.
+                       Improved build-in vocabulary and data file.
+                       Minor changes and additions.
+                       A little big fix.
+
+- New to version 3.50: THIS MILLENIUM VERSION HAS TONS OF NEW ENHANCEMENTS
+                       If you bother Eliza (leave prompt empty, repeat too
+                       much, write short quotes, say bad words, etc.)
+                       it will get annoyed and may even end the conversation.
+                       In addition, Eliza will warn you before it happens.
+                       50 New build-in messages have been made for the above
+                       occasions!
+                       Special language recognition bug fixes.
+                       Animated text has been given a new color effect.
+                       Enhanced data file.
+                       Many other additions and changes.
+
+- New to version 3.50 second edition: Language recognition bug fix.
+                                      Improved start-up screen.
+                                      A little enhanced data file.
+
+- New to version 3.53: - Now you can recall what keyword ECC-Eliza has
+                         recognized in the patient's text and you can display
+                         it with Eliza's reply by easily adding a backslash \
+                         anywhere in Eliza's replys. I have took advantage of
+                         it already and added many replys.
+                         The displayed keyword's pronouns will be reversed
+                         (if the keyword is "I AM" it will be "YOU ARE", etc).
+                       - Enhanced data file.
+                       - Greatly improved language processing methods.
+                       - Optimized code.
+                       - A few bug fixes (not major ones).
+                       - A few little additions and mostly changes.
+
+- New to version 3.65: - Round numbers will are now converted to words.
+                         For example: 20000 = TWENTY THOUSAND, etc.
+                       - Enhanced data file with many new keywords & replys.
+                         Topics include:
+                                        psychologic & psychiatric terms
+                                        more problems
+                                        many people asked for it, so: sex.
+                                        basic patterns
+                                        prejudice, racism
+                                        and much more
+                         Data file has increased in 15KB.
+                       - Language manipulation bug fixes.
+                       - Many language enhancements and tweaks.
+                       - More build-in welcome quotes.
+                       - Eliza may now recall the day information which is
+                         weekday/time of day/holiday etc. in the data file.
+                         This is done using the ^ character.
+                       - User's name must follow basic english rules.
+                         Example: DFGSD and AUE will not be accepted.
+                       - Improper inputs will not be recognized.
+                         Eliza has 42 new build-in messages for such
+                         improper inputs.
+                         Improper inputs include replys with very long
+                         words (18 letters or more), a key being repeated
+                         many times in a row, or words that do not follow
+                         the English rules. Eliza may get upset about such
+                         replies, and end the conversation.
+                       - Bug 2K fix. V3.53 would not work when the day
+                         of the month was 1 to 6 of the year 2000.
+                         This has been fixed.
+                       - Many other additions and changes.
+
+Still to come
+컴컴컴컴컴컴�
+On the next versions (after 3.65), you may expect:
+
+        - Conversations with Eliza will be automatically logged in a HISTORY
+          folder, in ascending file names.
+        - When typing "HELP", this help file will be displayed in a nice
+          text viewer (it will take time).
+        - One more allignment improvement.
+        - More new visual effects.
+        - Better language recognition (of course)
+        - And many more.
+       
+If you find a bug
+컴컴컴컴컴컴컴컴�
+In case you find a bug, please make sure to check if it also happens on the
+newest version of Eliza. If so, contact me quickly and tell me the exact
+conversation and where the bug appears. Also, tell me technical information
+about your computer (I don't mean your BIOS date nor the amount of jumpers
+on your sound card). Thank you. My E-Mail is below written.
+* Technical information is not needed on language recognition bugs.
+
+TO GET THE LATEST AVAILABLE VERSION OF ECC-ELIZA FREE E-MAIL TO:
+
+                       ultimate@internet-zahav.net
+
+STATE YOUR CURRENT VERSION SO THAT I WON'T E-MAIL YOU WHAT YOU MIGHT
+ALREADY HAVE.
+
+You may also E-Mail me if you want to get a specific version of Eliza.
+
+There were lots of versions of ECC-Eliza, many of them I've deleted.
+The ones I didn't delete and I have are:
+
+1.00, 2.15, 2.20, 2.27, 2.56, 2.63, 2.67, 2.69, 2.75, 2.82, 2.84, 2.88, 2.89,
+2.96, 3.00, 3.05, 3.06, 3.16, 3.17, 3.20, 3.21, 3.22, 3.30, 3.31, 3.32, 3.34,
+3.35, 3.36, 3.37, 3.38, 3.40, 3.42, 3.46, 3.47, 3.50, 3.50 (second edition),
+3.53, 3.65.
+
+You may also E-Mail me suggestions for program improvements (realistic ones,
+I cannot convert it to Windows 9x/2K, etc). I will also be happy to get an
+improvement of the Data file that you made. If it works well (better than
+before), please E-Mail me ONLY the new keywords and replys - not the whole
+data file and I will improve the existing data file with it.
+
+DATA FILE NOTE: I didn't save the data file for versions 2.15 to 2.89.
+For those versions I can give the latest version of data file which is not
+the same for version 3.00 due to the name addition. That data file is the
+one from version 2.96. In addition to that, I also have the original
+data file for version 1.00. Versions 3 and up now have another data file
+which supports the new name extension (from version 3). The previous versions
+will display "|" each place the user's name should be written.
+In addition, I sometimes delete parts of the data file from version to
+version. This is done because some parts are FULLY useless. I promise you
+that the deleted parts have no importance for the program (they only waste
+a few bytes and may bring up bad replies).
+If ECC-Eliza's data file is not in the directory of ECCELIZA.EXE, a runtime
+error will prevent the user from running it.
+
+Registration
+컴컴컴컴컴컴
+ECC-Eliza is freeware. Yet, you may register in order to get your own
+personalized version without my name at all (if you're interested).
+The personalized version contains your name and whatever special features
+you want me to add to that.
+You may also send me any amount of money you're interested in (E-Mail me
+to get the address), in order to motivate me into improving ECC-Eliza.
+You may E-Mail to: ultimate@internet-zahav.net, for any of these reasons.
+But don't worry - ECC-Eliza is completely free and may be passed on freely,
+you may use it for any amount of time - just do not modify it without my
+permission.
+
+Thank you.
+
+Comments
+컴컴컴컴
+Any comments, suggestions or ideas? That's good.
+
+You could E-mail the Eden-Comp Company at: ultimate@internet-zahav.net
+
+or visit our homepage at: http://www.ecceliza.cjb.net 
+
+
+IMPORTANT REMARK
+컴컴컴컴컴컴컴컴
+Many people have been noting me about it and I would like to make it clear
+that ECC-Eliza is made for entertainment purposes only, and emulates a
+psychologist. By no means shall you refer to it as a real psychologist or
+psychiatrist. I am not responsible for any mental and/or physical disorder
+caused as a result of obeying to Eliza or using Eliza in any way.
+USE ECC-ELIZA AT YOUR OWN RISK!
+I AM NOT RESPONSIBLE FOR ANY PROBLEMS OF ANY TYPE CAUSED BY IT.
+

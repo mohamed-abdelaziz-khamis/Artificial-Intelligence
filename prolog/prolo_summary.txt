@@ -1,0 +1,432 @@
+Ex1
+----
+DOMAINS
+   name=symbol
+   age=integer
+
+PREDICATES
+   nondeterm pupil(name, age)
+
+CLAUSES
+   pupil(peter,9).
+   pupil(paul,10).
+   pupil(chris,9).
+   pupil(susan,9).
+
+GOAL
+   pupil(X,9).
+
+X=peter
+X=chris
+X=susan
+3 Solutions
+
+Ex1a
+-----
+GOAL
+   pupil(X,9), pupil(Y,9), X<>Y.
+X=peter, Y=chris
+X=peter, Y=susan
+X=chris, Y=peter
+X=chris, Y=susan
+X=susan, Y=peter
+X=susan, Y=chris
+6 Solutions
+
+Ex1b
+----
+GOAL
+   pupil(X,9); pupil(X,10).
+X=peter
+X=chris
+X=susan
+X=paul
+4 Solutions
+==========================
+Ex2 : Warning !!!
+-----
+DOMAINS
+   name, sex = symbol
+   age = integer
+
+PREDICATES 
+   person(name, sex, age)
+
+CLAUSES
+   same_sex(X,Y) :- person(X, Sex,_), person(Sex, Y,_).
+                               |              |
+				--------------
+                               		|
+					different domains
+==========================================
+Ex3a : Answer to GOAL person(Y) depends on the order
+       in which assertions are examined.
+-----
+DOMAINS
+   somebody = symbol
+
+PREDICATES
+  nondeterm man(somebody)	
+  nondeterm person(somebody)
+Clauses
+man(marcus).
+man(caesar).
+person(cleopatra).
+person(X):-man(X).
+
+GOAL 
+person(Y).
+Y=cleopatra
+Y=marcus
+Y=caesar
+3 Solutions
+=======================================
+Ex3b : Rearrange the clauses in Ex3a :
+-----
+
+Clauses
+man(marcus).
+man(caesar).
+person(X):-man(X).
+person(cleopatra).
+GOAL 
+person(Y).
+ Y= marcus
+ Y= caesar
+ Y= cleopatra	
+3 Solutions
+===================================================
+Ex5
+----
+Recursive rules : A family tree
+
+DOMAINS
+   person=symbol
+
+PREDICATES
+   nondeterm male(person)
+   nondeterm female(person)
+   nondeterm child(person, person)
+   nondeterm descendant(person, person)
+   
+CLAUSES
+   male(tom). male(bob). male(jim).
+   female(pam). female(liz). female(ann). female(pat).
+   
+   child(bob,tom). child(ann, bob). child(pat, bob). child(jim, pat).
+   child(liz,bob).
+   				
+   descendant(D,A):-child(D,A).
+   descendant(D,A):-child(D,P), descendant(P,A).
+
+GOAL
+  descendant(pat,tom).
+yes
+
+GOAL
+  descendant(X, tom).
+X=bob
+X=ann
+X=pat
+X=jim
+X=liz
+5 Solutions
+==========================================
+Ex6a the cut operator
+----
+
+DOMAINS
+   person=symbol
+
+PREDICATES
+   nondeterm human(person) 
+   woman(person)
+   female(person)
+
+CLAUSES
+   woman(W):- human(W), !,female(W).
+   human(mary).
+   human(george).
+   female(mary).
+
+GOAL
+   woman(X).
+X=mary
+1 Solution
+Suppose that we swap human(george) with human(mary) : 
+with the same Goal we get No Answer
+=========================================
+Ex 7	route problem
+---------------
+DOMAINS
+  town = symbol
+  distance = integer
+
+PREDICATES
+  nondeterm road(town,town,distance)
+  nondeterm route(town,town,distance)
+
+CLAUSES
+  road(tampa,houston,200).
+  road(gordon,tampa,300).
+  road(houston,gordon,100).
+  road(houston,kansas_city,120).
+  road(gordon,kansas_city,130).
+
+  route(Town1,Town2,Distance):-
+    road(Town1,Town2,Distance).
+
+  route(Town1,Town2,Distance):-
+	road(Town1,X,Dist1),
+	route(X,Town2,Dist2),
+	Distance=Dist1+Dist2,!.
+
+GOAL	
+route(tampa,kansas_city, X).
+X=320
+1 Solution
+
+==============================================
+Ex 8 compound data objects 
+--------------------------
+
+DOMAINS
+name = person(symbol,symbol)	/* (First, Last) */
+birthday = b_date(symbol,integer,integer)	/* (Month, Day, Year) */
+ph_num = symbol	/* Phone_number */
+
+PREDICATES
+nondeterm phone_list(name,symbol,birthday)
+get_months_birthdays
+convert_month(symbol,integer)
+check_birthday_month(integer,birthday)
+write_person(name)
+
+CLAUSES
+get_months_birthdays:-
+write("************ This Month's Birthday List *************"),nl,
+write(" First name\t\t Last Name\n"),
+write("*****************************************************"),nl,
+date(_, This_month, _),	/* Get month from system clock */
+phone_list(Person, _, Date),
+check_birthday_month(This_month, Date),
+write_person(Person),
+fail.
+get_months_birthdays:-
+write("\n\n Press any key to continue: "),nl,
+readchar(_).
+write_person(person(First_name,Last_name)):-
+write("  ",First_name,"\t\t   ",Last_name),nl.
+check_birthday_month(Mon,b_date(Month,_,_)):-
+convert_month(Month,Month1),
+Mon = Month1.
+phone_list(person(ed, willis), "767-8463", b_date(jan, 3, 1955)).
+phone_list(person(benjamin, thomas), "438-8400", b_date(feb, 5, 1985)).
+phone_list(person(ray, william), "555-5653", b_date(mar, 3, 1935)).
+phone_list(person(thomas, alfred), "767-2223", b_date(apr, 29, 1951)).
+phone_list(person(chris, grahm), "555-1212", b_date(may, 12, 1962)).
+phone_list(person(dustin, robert), "438-8400", b_date(jun, 17, 1980)).
+phone_list(person(anna, friend), "767-8463", b_date(jun, 20, 1986)).
+phone_list(person(brandy, rae), "555-5653", b_date(jul, 16, 1981)).
+phone_list(person(naomi, friend), "767-2223", b_date(aug, 10, 1981)).
+phone_list(person(christina, lynn), "438-8400", b_date(sep, 25, 1981)).
+phone_list(person(kathy, ann), "438-8400", b_date(oct, 20, 1952)).
+phone_list(person(elizabeth, ann), "555-1212", b_date(nov, 9, 1984)).
+phone_list(person(aaron, friend), "767-2223", b_date(nov, 15, 1987)).
+phone_list(person(jennifer, caitlin), "438-8400", b_date(dec, 31, 1981)).
+convert_month(jan, 1).
+convert_month(feb, 2).
+convert_month(mar, 3).
+convert_month(apr, 4).
+convert_month(may, 5).
+convert_month(jun, 6).
+convert_month(jul, 7).
+convert_month(aug, 8).
+convert_month(sep, 9).
+convert_month(oct, 10).
+convert_month(nov, 11).
+convert_month(dec, 12).
+GOAL
+get_months_birthdays.
+
+************ This Month's Birthday List *************
+ First name		 Last Name
+*****************************************************
+  elizabeth		   ann
+  aaron		   	friend
+ Press any key to continue: 
+==========================================================
+Set operations : membership
+Domains
+   list = symbol*
+
+Predicates
+   nondeterm member(symbol, list)
+   nondeterm string_to_list(string, list)   
+   run
+Clauses
+   run :- write("Enter Set: "), readln(Line),  string_to_list(Line, List),
+      write("Enter element: "), readln(Element), member(Element, List), 
+      write("\n Element ", Element, " is a member of List", List),
+      readchar(_), !.
+      
+   member (X, [X|_]).
+   member(X, [_|T]) :- member(X, T).
+   string_to_list(S, [H|T]):- fronttoken(S, H, S1), !,  string_to_list(S1, T).    
+   string_to_list(_, []).  
+   
+Goal
+   run.
+----
+Enter Set: 1 3 5
+Enter element: 2
+no
+----
+Enter Set: 1 3 5
+Enter element: 3
+
+ Element 3 is a member of List["1","3","5"]yes
+============================================================
+Knight tour problem :
+Domains
+  element = integer
+  list = element*
+  
+Predicates
+   writelist(list)
+   nondeterm member(element,list) 
+   nondeterm move(element,element)
+   nondeterm path(element,element,list)
+Clauses
+   writelist([]).
+writelist([H|T]):- write(H), nl, writelist(T).
+   
+   move(1 ,6 ). move(3 ,4 ). move(6 ,7 ). move(8 ,3 ).
+   move(1 ,8 ). move(3,8 ). move( 6,1 ). move(8 ,1 ).
+   move(2 ,7 ). move(4 ,3 ). move(7 ,6 ). move( 9,4 ).
+   move(2 ,9 ). move(4 ,9 ). move(7 ,2 ). move( 9,2 ).
+   
+   
+   member(X,[X|T]).
+   member(X,[_|T]):-member(X,T).
+/* Depth first search with backtracking - 
+	duplicate visited states prevented*/
+   path(Z,Z,L):-writelist(L),!. /* path1 */
+   path(X,Y,L):-move(X,Z), not(member(Z,L)),path(Z,Y,[Z|L]).
+/* path2 */
+   
+  Goal
+    path(1,3,[1])./* prints [3,4,9,2,7,6,1] one item in a line */
+              |
+	      ---<--- starting state
+========================================================
+The Farmer, Wolf, Goat and Cabbage problem
+-------------------------------------------
+Domains
+  state=state(symbol,symbol,symbol,symbol)
+  list = state*
+  
+Predicates
+	     writelist(list)
+   nondeterm member(state,list) 
+   nondeterm move(state,state)
+   nondeterm path(state,state,list)
+   nondeterm unsafe(state)
+   nondeterm opp(symbol,symbol)
+   
+Clauses
+   writelist([]).
+   writelist([H|T]):- write(H),nl,writelist(T).
+   /* farmer takes wolf */
+   move(state(X,X,G,C),state(Y,Y,G,C)):-opp(X,Y),not(unsafe(state(Y,Y,G,C))).
+   
+   /* farmer takes goat */			
+   move(state(X,W,X,C),state(Y,W,Y,C)):-opp(X,Y),not(unsafe(state(Y,W,Y,C))).
+   
+   /* farmer takes cabbage */			
+   move(state(X,W,G,X),state(Y,W,G,Y)):-opp(X,Y),not(unsafe(state(Y,W,G,Y))).
+   			
+   /* farmer takes self */   
+   move(state(X,W,G,C),state(Y,W,G,C)):-opp(X,Y),not(unsafe(state(Y,W,G,C))).
+   			
+   member(X,[X|T]).
+   member(X,[_|T]):-member(X,T).
+   
+   path(Z,Z,L):-write(L),!.
+   path(X,Y,L):-move(X,Z), not(member(Z,L)),path(Z,Y,[Z|L]).
+   
+   opp(e,w).
+   opp(w,e).
+   unsafe(state(X,Y,Y,C)):-opp(X,Y).
+   unsafe(state(X,W,Y,Y)):-opp(X,Y).
+  Goal
+    path(state(w,w,w,w),state(e,e,e,e),[state(w,w,w,w)]).
+    [state("e","e","e","e"),
+    state("w","e","w","e"), farmer takes goat
+    state("e","e","w","e"), farmer takes self
+    state("w","e","w","w"), farmer takes cabbage
+    state("e","e","e","w"), farmer takes goat
+    state("w","w","e","w"), farmer takes wolf
+    state("e","w","e","w"), farmer takes self
+    state("w","w","w","w")]yes farmer takes goat.
+--------------------------------------------------------------
+Revision
+========
+Factorial
+---------
+Predicates
+nondeterm factorial(integer,integer)
+
+Clauses
+ factorial(0,1).
+ factorial(1,1).
+ factorial(N,M):- N1=N-1, factorial(N1,M1), M=N*M1,!.
+ 
+ Goal
+  factorial(5,X).
+
+=======================
+Recursive rules : A family tree
+
+DOMAINS
+   person=symbol
+
+PREDICATES
+   nondeterm male(person)
+   nondeterm female(person)
+   nondeterm married(person,person)
+   nondeterm parent(person,person)
+   nondeterm mother(person, person)
+   nondeterm father(person, person)
+   nondeterm child(person, person)
+   nondeterm sibling (person, person)
+   nondeterm sister(person, person)
+   nondeterm descendant(person, person)
+   
+
+CLAUSES
+   male(tom). male(bob). male(jim).
+   female(pam). female(liz). female(ann). female(pat).
+   married(tom,pam).
+   child(bob,tom). child(ann, bob). child(pat, bob). child(jim, pat).
+   child(liz,bob).
+   parent(P,C):- child(C,P). 
+   mother(M,C):- child(C,M), female(M).
+   father(P,C):- child(P,C), male(P).
+   sibling(X,Y):-child(X,P),child(Y,P), X<>Y. 
+   sister(S,X):- sibling(S,X), female(S).					
+   descendant(D,A):-child(D,A).
+   descendant(D,A):-child(D,P), descendant(P,A).
+
+GOAL
+  descendant(pat,tom).
+yes
+
+GOAL
+  descendant(X, tom).
+X=bob
+X=ann
+X=pat
+X=jim
+X=liz
+5 Solutions
